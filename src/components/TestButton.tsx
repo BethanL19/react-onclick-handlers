@@ -1,5 +1,12 @@
 function TestButton(): JSX.Element {
-  return <button>Make me do something when I'm clicked...</button>;
+  const handleClick = () => {
+    alert("AHHHHH");
+  };
+  return (
+    <button onClick={handleClick}>
+      Make me do something when I'm clicked...
+    </button>
+  );
 }
 
 export default TestButton;
